@@ -17,26 +17,22 @@
         <style>
             .paper-entry {
                 display: flex;
-                align-items: center;
-                justify-content: space-between;
-                gap: 20px;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 1.5rem;
             }
             .paper-entry .paper-text {
-                flex: 1 1 auto;
-                min-width: 0;
+                width: 100%;
             }
             .paper-thumb {
-                flex: 0 0 auto;
-                width: 420px;
-                height: 280px;
-                object-fit: contain;
+                width: 100%;
+                max-width: 800px;
+                height: auto;
+                margin-top: 12px;
                 border: 1px solid #e0e0e0;
                 border-radius: 6px;
                 background: #fff;
-                padding: 4px;
-            }
-            @media (max-width: 767.98px) {
-                .paper-thumb { display: none; }
+                padding: 6px;
             }
         </style>
     </head>
