@@ -34,6 +34,24 @@
                 background: #fff;
                 padding: 6px;
             }
+            .interests-grid {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 24px;
+                margin-top: 16px;
+            }
+            .interest-item {
+                flex: 1 1 320px;
+                max-width: 480px;
+            }
+            .interest-photo {
+                width: 100%;
+                height: auto;
+                border: 1px solid #e0e0e0;
+                border-radius: 6px;
+                background: #fff;
+                padding: 4px;
+            }
         </style>
     </head>
     <body id="page-top">
@@ -251,9 +269,24 @@
                     <h2 class="mb-5">Interests</h2>
                     <p class="mb-0">Reading</p>
                     <p class="mb-0">Hiking</p>
-                    <p class="mb-0">Badminton</p>
-                    <p class="mb-0">Sketching</p>
-                    <p class="mb-0">Piano</p>
+                    <div class="interests-grid">
+                        <div class="interest-item">
+                            <p class="mb-1"><strong>Badminton</strong></p>
+                            <img class="interest-photo" src="assets/img/interests/badminton.jpg" alt="Playing badminton" />
+                        </div>
+                        <div class="interest-item">
+                            <p class="mb-1"><strong>Sketching</strong></p>
+                            <img class="interest-photo" src="assets/img/interests/sketching.jpg" alt="Colored pencil sketch" />
+                        </div>
+                        <div class="interest-item">
+                            <p class="mb-1"><strong>Piano</strong></p>
+                            <img class="interest-photo" src="assets/img/interests/piano.jpg" alt="Playing piano" />
+                        </div>
+                        <div class="interest-item">
+                            <p class="mb-1"><strong>Calligraphy</strong></p>
+                            <img class="interest-photo" src="assets/img/interests/calligraphy.png" alt="Chinese calligraphy" />
+                        </div>
+                    </div>
                 </div>
             </section>
             <hr class="m-0" />
