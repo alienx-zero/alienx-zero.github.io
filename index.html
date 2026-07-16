@@ -14,6 +14,31 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            .paper-entry {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+            }
+            .paper-entry .paper-text {
+                flex: 1 1 auto;
+                min-width: 0;
+            }
+            .paper-thumb {
+                flex: 0 0 auto;
+                width: 160px;
+                height: 110px;
+                object-fit: contain;
+                border: 1px solid #e0e0e0;
+                border-radius: 6px;
+                background: #fff;
+                padding: 4px;
+            }
+            @media (max-width: 767.98px) {
+                .paper-thumb { display: none; }
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -62,64 +87,76 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Selected Papers</h2>
                     <ul>
-                        <li>
-                            <h3 class="mb-1">
-                                <a href="https://www.sciencedirect.com/science/article/pii/S1053811921010466" target="_blank">
-                                    A dynamic graph convolutional neural network framework reveals new insights into connectome dysfunctions in ADHD
+                        <li class="paper-entry">
+                            <div class="paper-text">
+                                <h3 class="mb-1">
+                                    <a href="https://www.sciencedirect.com/science/article/pii/S1053811921010466" target="_blank">
+                                        A dynamic graph convolutional neural network framework reveals new insights into connectome dysfunctions in ADHD
+                                    </a><br/>
+                                    <em>NeuroImage, 2022</em>
+                                </h3>
+                            </div>
+                            <img class="paper-thumb" src="assets/img/papers/adhd_neuroimage.jpg" alt="Flowchart for the ADHD connectome dysfunction paper" />
+                        </li>
+
+                        <li class="paper-entry">
+                            <div class="paper-text">
+                                <h3 class="mb-1">
+                                <a href="https://www.nature.com/articles/s44220-024-00209-1" target="_blank">
+                                    Discriminative functional connectivity signature of cocaine use disorder links to rTMS treatment response
                                 </a><br/>
-                                <em>NeuroImage, 2022</em>
-                            </h3>
-
-                        </li>
-            
-                        <li>
-                            <h3 class="mb-1">
-                            <a href="https://www.nature.com/articles/s44220-024-00209-1" target="_blank">
-                                Discriminative functional connectivity signature of cocaine use disorder links to rTMS treatment response
-                            </a><br/>
-                            <em>Nature Mental Health, 2024</em>                         
-                            </h3>
-
-                        </li>
-            
-                        <li>
-                            <h3 class="mb-1">
-                            <a href="https://www.nature.com/articles/s41380-023-01958-8" target="_blank">
-                                Individualized fMRI connectivity defines signatures of antidepressant and placebo responses in major depression
-                            </a><br/>
-                            <em>Molecular psychiatry, 2023</em>
-                            </h3>
-
+                                <em>Nature Mental Health, 2024</em>
+                                </h3>
+                            </div>
+                            <img class="paper-thumb" src="assets/img/papers/cud_nmh.jpg" alt="Flowchart for the cocaine use disorder rTMS paper" />
                         </li>
 
-                        <li>
-                            <h3 class="mb-1">
-                            <a href="https://www.biorxiv.org/content/10.1101/2025.07.20.665707v1" target="_blank">
-                                Functional Connectome of Superagers Reveals Early Markers of Resilience and Vulnerability to Alzheimer's Disease
-                            </a><br/>
-                            <em>Under second revision, Science Advances, 2026</em>
-                            </h3>
-
+                        <li class="paper-entry">
+                            <div class="paper-text">
+                                <h3 class="mb-1">
+                                <a href="https://www.nature.com/articles/s41380-023-01958-8" target="_blank">
+                                    Individualized fMRI connectivity defines signatures of antidepressant and placebo responses in major depression
+                                </a><br/>
+                                <em>Molecular psychiatry, 2023</em>
+                                </h3>
+                            </div>
+                            <img class="paper-thumb" src="assets/img/papers/antidepressant_mp.jpg" alt="Flowchart for the antidepressant/placebo response paper" />
                         </li>
 
-                        <li>
-                            <h3 class="mb-1">
-                            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6201852" target="_blank">
-                                Brain-Gut Crosstalk Shapes Early Brain Aging in Young and Mid-Life Adults: A Multicohort Cross-section Study
-                            </a><br/>
-                            <em>Under review at eBioMedicine, 2026</em>
-                            </h3>
-
+                        <li class="paper-entry">
+                            <div class="paper-text">
+                                <h3 class="mb-1">
+                                <a href="https://www.biorxiv.org/content/10.1101/2025.07.20.665707v1" target="_blank">
+                                    Functional Connectome of Superagers Reveals Early Markers of Resilience and Vulnerability to Alzheimer's Disease
+                                </a><br/>
+                                <em>Under second revision, Science Advances, 2026</em>
+                                </h3>
+                            </div>
+                            <img class="paper-thumb" src="assets/img/papers/superagers_sa.png" alt="Flowchart for the Superagers connectome paper" />
                         </li>
 
-                        <li>
-                            <h3 class="mb-1">
-                            <a href="https://doi.org/10.2139/ssrn.6724545" target="_blank">
-                                DietBERT: A Multimodal Transformer Model Linking Real-World Dietary Behavior to Immune, Metabolic and Mental Phenotypes: A Multicohort Population Study
-                            </a><br/>
-                            <em>Under review at npj Digital Medicine, 2026</em>
-                            </h3>
+                        <li class="paper-entry">
+                            <div class="paper-text">
+                                <h3 class="mb-1">
+                                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6201852" target="_blank">
+                                    Brain-Gut Crosstalk Shapes Early Brain Aging in Young and Mid-Life Adults: A Multicohort Cross-section Study
+                                </a><br/>
+                                <em>Under review at eBioMedicine, 2026</em>
+                                </h3>
+                            </div>
+                            <img class="paper-thumb" src="assets/img/papers/braingut_ebio.png" alt="Flowchart for the Brain-Gut Crosstalk paper" />
+                        </li>
 
+                        <li class="paper-entry">
+                            <div class="paper-text">
+                                <h3 class="mb-1">
+                                <a href="https://doi.org/10.2139/ssrn.6724545" target="_blank">
+                                    DietBERT: A Multimodal Transformer Model Linking Real-World Dietary Behavior to Immune, Metabolic and Mental Phenotypes: A Multicohort Population Study
+                                </a><br/>
+                                <em>Under review at npj Digital Medicine, 2026</em>
+                                </h3>
+                            </div>
+                            <img class="paper-thumb" src="assets/img/papers/dietbert_npj.png" alt="Flowchart for the DietBERT paper" />
                         </li>
 
                         <li>
@@ -131,24 +168,28 @@
 
                         </li>
 
-                        <li>
-                            <h3 class="mb-1">
-                            <a href="https://www.biorxiv.org/content/10.1101/2024.10.16.618708v1" target="_blank">
-                                Elucidating the neuropathological and molecular heterogeneity of amyloid-β and tau in Alzheimer's disease through machine learning and transcriptomic integration
-                            </a><br/>
-                            <em>Conditionally accepted, Alzheimer's & Dementia, 2026</em>
-                            </h3>
-
+                        <li class="paper-entry">
+                            <div class="paper-text">
+                                <h3 class="mb-1">
+                                <a href="https://www.biorxiv.org/content/10.1101/2024.10.16.618708v1" target="_blank">
+                                    Elucidating the neuropathological and molecular heterogeneity of amyloid-β and tau in Alzheimer's disease through machine learning and transcriptomic integration
+                                </a><br/>
+                                <em>Conditionally accepted, Alzheimer's & Dementia, 2026</em>
+                                </h3>
+                            </div>
+                            <img class="paper-thumb" src="assets/img/papers/amyloidtau_ad.png" alt="Flowchart for the amyloid/tau heterogeneity paper" />
                         </li>
 
-                        <li>
-                            <h3 class="mb-1">
-                            <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2820862" target="_blank">
-                                Dementia Subtypes Defined Through Neuropsychiatric Symptom-Associated Brain Connectivity Patterns
-                            </a><br/>
-                            <em>JAMA Network Open, 2024</em>
-                            </h3>
-
+                        <li class="paper-entry">
+                            <div class="paper-text">
+                                <h3 class="mb-1">
+                                <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2820862" target="_blank">
+                                    Dementia Subtypes Defined Through Neuropsychiatric Symptom-Associated Brain Connectivity Patterns
+                                </a><br/>
+                                <em>JAMA Network Open, 2024</em>
+                                </h3>
+                            </div>
+                            <img class="paper-thumb" src="assets/img/papers/dementia_jno.png" alt="Flowchart for the dementia subtypes paper" />
                         </li>
                     </ul>
                 </div>
