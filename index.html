@@ -12,6 +12,7 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <style>
@@ -127,6 +128,25 @@
             .music-player.show-hint .music-hint {
                 opacity: 1;
                 transform: translateY(0);
+            }
+            /* Guofeng-inspired minimalist background */
+            :root {
+                --bs-body-bg: #f6f1e6;
+                --bs-body-color: #2f2a24;
+            }
+            body {
+                background-color: var(--bs-body-bg);
+                background-image: radial-gradient(circle at 50% -10%, rgba(189, 93, 56, 0.06), transparent 55%);
+            }
+            h1, h2, h3, .subheading {
+                font-family: "Noto Serif SC", "Muli", serif;
+                letter-spacing: 0.02em;
+            }
+            hr.m-0 {
+                height: 1px;
+                border: none;
+                opacity: 1;
+                background: linear-gradient(to right, transparent, rgba(47, 42, 36, 0.35), transparent);
             }
         </style>
     </head>
