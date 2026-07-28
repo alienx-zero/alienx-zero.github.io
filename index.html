@@ -76,6 +76,58 @@
                 font-size: 0.85rem;
                 margin-top: 4px;
             }
+            .music-player {
+                position: fixed;
+                bottom: 24px;
+                right: 24px;
+                z-index: 1050;
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+                background: #1a1a1a;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+                cursor: pointer;
+                font-size: 1.4rem;
+                border: 2px solid rgba(255, 255, 255, 0.15);
+                transition: transform 0.2s ease;
+            }
+            .music-player:hover {
+                transform: scale(1.08);
+            }
+            .music-player.playing i {
+                animation: music-spin 3s linear infinite;
+            }
+            @keyframes music-spin {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+            .music-player .music-hint {
+                position: absolute;
+                bottom: 64px;
+                right: 0;
+                background: rgba(0, 0, 0, 0.75);
+                color: #fff;
+                padding: 6px 10px;
+                border-radius: 6px;
+                font-size: 0.75rem;
+                white-space: nowrap;
+                opacity: 0;
+                transform: translateY(4px);
+                transition: opacity 0.3s ease, transform 0.3s ease;
+                pointer-events: none;
+            }
+            .music-player.show-hint .music-hint {
+                opacity: 1;
+                transform: translateY(0);
+            }
         </style>
     </head>
     <body id="page-top">
@@ -410,9 +462,47 @@
                 </div>
             </section>
         </div>
+        <!-- Background Music Player -->
+        <audio id="bgMusic" src="assets/audio/xunyu_edited.mp3" loop preload="auto"></audio>
+        <div class="music-player show-hint" id="musicPlayer" title="Play/pause music">
+            <span class="music-hint" id="musicHint">Click for music 🎵</span>
+            <i class="fas fa-music" id="musicIcon"></i>
+        </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- Background music control-->
+        <script>
+            (function () {
+                var audio = document.getElementById('bgMusic');
+                var player = document.getElementById('musicPlayer');
+                var hint = document.getElementById('musicHint');
+                audio.volume = 0.5;
+
+                function setPlayingState(isPlaying) {
+                    player.classList.toggle('playing', isPlaying);
+                }
+
+                audio.muted = true;
+                audio.play().then(function () { setPlayingState(true); }).catch(function () {});
+
+                player.addEventListener('click', function () {
+                    if (audio.muted || audio.paused) {
+                        audio.muted = false;
+                        audio.play().then(function () {
+                            setPlayingState(true);
+                            hint.textContent = 'Playing 🎶';
+                            setTimeout(function () { player.classList.remove('show-hint'); }, 1500);
+                        });
+                    } else {
+                        audio.pause();
+                        setPlayingState(false);
+                    }
+                });
+
+                setTimeout(function () { player.classList.remove('show-hint'); }, 6000);
+            })();
+        </script>
     </body>
 </html>
