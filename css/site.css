@@ -190,10 +190,10 @@ section.resume-section {
 }
 
 .hero-portrait {
-    /* 9:10 head-and-shoulders crop: the full 3:4 frame carried too much
-       chest, a square or circle clips the head */
+    /* square crop taken from the 1280x1706 original, which is wide
+       enough to fit the whole head at 1:1 */
     width: 14rem;
-    aspect-ratio: 9 / 10;
+    aspect-ratio: 1 / 1;
     height: auto;
     border-radius: 14px;
     object-fit: cover;
