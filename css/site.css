@@ -190,13 +190,12 @@ section.resume-section {
 }
 
 .hero-portrait {
-    /* frame matches the supplied crop exactly, so object-fit never
-       trims it */
+    /* no aspect-ratio and no object-fit: the image keeps its own
+       intrinsic ratio, so the frame can never crop the supplied photo */
     width: 14rem;
-    aspect-ratio: 760 / 869;
     height: auto;
+    display: block;
     border-radius: 14px;
-    object-fit: cover;
     box-shadow: var(--shadow-md);
     border: 0.4rem solid var(--paper-raised);
     outline: 1px solid var(--rule);
