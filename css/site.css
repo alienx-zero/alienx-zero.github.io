@@ -190,12 +190,16 @@ section.resume-section {
 }
 
 .hero-portrait {
+    /* the Stanford headshot is a tight square crop with the head off-centre,
+       so a circular mask clips the face; show the whole frame instead */
     width: 15rem;
     height: 15rem;
-    border-radius: 50%;
+    border-radius: 14px;
     object-fit: cover;
     box-shadow: var(--shadow-md);
-    border: 0.45rem solid var(--paper-raised);
+    border: 0.4rem solid var(--paper-raised);
+    outline: 1px solid var(--rule);
+    outline-offset: -0.4rem;
 }
 
 .hero-meta {
@@ -215,8 +219,8 @@ section.resume-section {
         gap: 2rem;
     }
     .hero-portrait {
-        width: 10rem;
-        height: 10rem;
+        width: 11rem;
+        height: 11rem;
         order: -1;
     }
 }
