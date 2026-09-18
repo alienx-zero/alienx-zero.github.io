@@ -190,10 +190,10 @@ section.resume-section {
 }
 
 .hero-portrait {
-    /* square crop taken from the 1280x1706 original, which is wide
-       enough to fit the whole head at 1:1 */
+    /* frame matches the supplied crop exactly, so object-fit never
+       trims it */
     width: 14rem;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 760 / 869;
     height: auto;
     border-radius: 14px;
     object-fit: cover;
