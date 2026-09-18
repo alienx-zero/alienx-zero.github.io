@@ -511,6 +511,19 @@ section.resume-section {
     color: var(--ink-faint);
 }
 
+.work-if {
+    font-family: var(--sans);
+    font-size: 0.74rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--ink-faint);
+    padding: 0.1rem 0.5rem;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    background: rgba(246, 241, 230, 0.8);
+    white-space: nowrap;
+}
+
 .work-summary {
     color: var(--ink-soft);
     font-size: 1.02rem;
