@@ -534,6 +534,13 @@ section.resume-section {
     max-width: 52rem;
 }
 
+.work-note {
+    margin: -0.4rem 0 0;
+    font-size: 0.88rem;
+    font-style: italic;
+    color: var(--ink-faint);
+}
+
 .work-thumb {
     width: 100%;
     max-width: 860px;
