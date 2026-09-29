@@ -599,14 +599,15 @@ section.resume-section {
 
 .future-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
-    gap: 1.5rem;
+    gap: 1.75rem;
 }
 
 .future-card {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: minmax(0, 19rem) minmax(0, 1fr);
+    gap: 2rem;
+    align-items: stretch;
     padding: 2.1rem 1.7rem 1.9rem;
     border: 1px solid var(--rule-strong);
     border-radius: 14px;
@@ -625,6 +626,12 @@ section.resume-section {
 .future-card:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-md);
+}
+
+.future-text {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 
 .future-index {
@@ -650,11 +657,52 @@ section.resume-section {
 }
 
 .future-note {
-    margin-top: auto;
+    margin-top: 1.3rem;
     padding-top: 1rem;
     border-top: 1px dashed var(--rule);
     font-size: 0.87rem;
     color: var(--ink-faint);
+}
+
+/* --- direction schematics ------------------------------------------------ */
+
+.future-figure {
+    margin: 0;
+    align-self: center;
+    min-width: 0;
+}
+.future-figure a {
+    display: block;
+    border-radius: 10px;
+}
+.future-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    background: #fff;
+    padding: 6px;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.2s ease;
+}
+.future-figure a:hover img,
+.future-figure a:focus-visible img {
+    box-shadow: var(--shadow-md);
+}
+.future-figure figcaption {
+    margin-top: 0.7rem;
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: var(--ink-faint);
+}
+
+@media (max-width: 991.98px) {
+    .future-card {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.5rem;
+    }
 }
 
 /* ==========================================================================
