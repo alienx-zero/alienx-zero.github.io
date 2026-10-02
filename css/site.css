@@ -1023,23 +1023,6 @@ section.resume-section {
     opacity: 0.85;
 }
 
-.footer-counters {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 0.9rem;
-}
-
-.statcounter-badge {
-    display: inline-flex;
-    align-items: center;
-    line-height: 0;
-}
-.statcounter-badge img {
-    max-width: 100%;
-}
-
 /* ==========================================================================
    Background music widget
    ========================================================================== */
