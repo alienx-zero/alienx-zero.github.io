@@ -1,0 +1,208 @@
+{
+  "snapshot_date": "2026-10-01",
+  "summary": {
+    "counter_code": "vTNc",
+    "source": "https://s01.flagcounter.com/countries/vTNc",
+    "countries_total": 12,
+    "flags_collected": 28,
+    "newest_region": "Texas, United States",
+    "newest_country": "Australia",
+    "record_visitors": "13 on August 3, 2026",
+    "total_visitors": 201,
+    "newest_region_progress": "15/51",
+    "note": "Snapshot of the free Flag Counter record taken when a region-capable analytics tool was added alongside it. Flag Counter has no export, API, or account transfer, so this file is the only portable copy. On the free plan sub-country regions are collected only for the US and Canada; regions_locked is how many provinces/regions that country would be broken into on Flag Counter Pro."
+  },
+  "countries": [
+    {
+      "rank": 1,
+      "country": "United States",
+      "visitors": 166,
+      "last_new_visitor": "17 hours ago",
+      "regions": [
+        {
+          "name": "California",
+          "visitors": 83,
+          "last_new_visitor": "September 30, 2026"
+        },
+        {
+          "name": "Virginia",
+          "visitors": 19,
+          "last_new_visitor": "September 29, 2026"
+        },
+        {
+          "name": "Iowa",
+          "visitors": 17,
+          "last_new_visitor": "September 29, 2026"
+        },
+        {
+          "name": "Colorado",
+          "visitors": 8,
+          "last_new_visitor": "August 3, 2026"
+        },
+        {
+          "name": "Washington",
+          "visitors": 8,
+          "last_new_visitor": "September 22, 2026"
+        },
+        {
+          "name": "New York",
+          "visitors": 3,
+          "last_new_visitor": "August 5, 2026"
+        },
+        {
+          "name": "Maryland",
+          "visitors": 3,
+          "last_new_visitor": "September 11, 2026"
+        },
+        {
+          "name": "Georgia",
+          "visitors": 3,
+          "last_new_visitor": "September 13, 2026"
+        },
+        {
+          "name": "Florida",
+          "visitors": 2,
+          "last_new_visitor": "September 29, 2026"
+        },
+        {
+          "name": "Michigan",
+          "visitors": 2,
+          "last_new_visitor": "August 14, 2026"
+        },
+        {
+          "name": "Pennsylvania",
+          "visitors": 2,
+          "last_new_visitor": "September 24, 2026"
+        },
+        {
+          "name": "North Carolina",
+          "visitors": 1,
+          "last_new_visitor": "August 5, 2026"
+        },
+        {
+          "name": "Massachusetts",
+          "visitors": 1,
+          "last_new_visitor": "August 29, 2026"
+        },
+        {
+          "name": "Illinois",
+          "visitors": 1,
+          "last_new_visitor": "September 11, 2026"
+        },
+        {
+          "name": "Texas",
+          "visitors": 1,
+          "last_new_visitor": "September 23, 2026"
+        },
+        {
+          "name": "Unknown",
+          "visitors": 12,
+          "last_new_visitor": "17 hours ago"
+        }
+      ],
+      "regions_locked": null,
+      "regions_collected": [
+        15,
+        51
+      ]
+    },
+    {
+      "rank": 2,
+      "country": "Singapore",
+      "visitors": 12,
+      "last_new_visitor": "September 30, 2026",
+      "regions": [],
+      "regions_locked": null
+    },
+    {
+      "rank": 3,
+      "country": "China",
+      "visitors": 11,
+      "last_new_visitor": "1 hour ago",
+      "regions": [],
+      "regions_locked": 31
+    },
+    {
+      "rank": 4,
+      "country": "Hong Kong",
+      "visitors": 3,
+      "last_new_visitor": "September 26, 2026",
+      "regions": [],
+      "regions_locked": 18
+    },
+    {
+      "rank": 5,
+      "country": "South Korea",
+      "visitors": 2,
+      "last_new_visitor": "August 31, 2026",
+      "regions": [],
+      "regions_locked": 17
+    },
+    {
+      "rank": 6,
+      "country": "Australia",
+      "visitors": 1,
+      "last_new_visitor": "September 26, 2026",
+      "regions": [],
+      "regions_locked": 8
+    },
+    {
+      "rank": 7,
+      "country": "Canada",
+      "visitors": 1,
+      "last_new_visitor": "September 23, 2026",
+      "regions": [
+        {
+          "name": "Quebec",
+          "visitors": 1,
+          "last_new_visitor": "September 23, 2026"
+        }
+      ],
+      "regions_locked": null,
+      "regions_collected": [
+        1,
+        13
+      ]
+    },
+    {
+      "rank": 8,
+      "country": "Thailand",
+      "visitors": 1,
+      "last_new_visitor": "September 5, 2026",
+      "regions": [],
+      "regions_locked": 77
+    },
+    {
+      "rank": 9,
+      "country": "Ireland",
+      "visitors": 1,
+      "last_new_visitor": "July 30, 2026",
+      "regions": [],
+      "regions_locked": 26
+    },
+    {
+      "rank": 10,
+      "country": "Taiwan",
+      "visitors": 1,
+      "last_new_visitor": "July 25, 2026",
+      "regions": [],
+      "regions_locked": 22
+    },
+    {
+      "rank": 11,
+      "country": "Malaysia",
+      "visitors": 1,
+      "last_new_visitor": "July 24, 2026",
+      "regions": [],
+      "regions_locked": 16
+    },
+    {
+      "rank": 12,
+      "country": "India",
+      "visitors": 1,
+      "last_new_visitor": "July 21, 2026",
+      "regions": [],
+      "regions_locked": 36
+    }
+  ]
+}
