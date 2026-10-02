@@ -661,7 +661,30 @@
 
                     <div class="site-footer">
                         <span>&copy; <span id="year">2026</span> Kanhao (Alex) Zhao</span>
-                        <a href="https://info.flagcounter.com/vTNc" target="_blank" rel="noopener"><img src="https://s01.flagcounter.com/map/vTNc/size_s/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/" alt="Flag Counter" /></a>
+                        <div class="footer-counters">
+                            <a href="https://info.flagcounter.com/vTNc" target="_blank" rel="noopener"><img src="https://s01.flagcounter.com/map/vTNc/size_s/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/" alt="Flag Counter" /></a>
+                            <!-- Statcounter (visible). Needs a counter style picked under
+                                 Edit project settings > Customize counter, or it renders a 1x1 pixel.
+                                 Province-level data lives in the dashboard, not in this badge.
+                                 No async: counter.js uses document.write to place the counter here. -->
+                            <span class="statcounter-badge">
+                                <script type="text/javascript">
+                                    var sc_project = 13357864;
+                                    var sc_invisible = 0;
+                                    var sc_security = "f82d4d8f";
+                                </script>
+                                <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js"></script>
+                                <noscript
+                                    ><a title="Web Analytics" href="https://statcounter.com/" target="_blank" rel="noopener"
+                                        ><img
+                                            src="https://c.statcounter.com/13357864/0/f82d4d8f/1/"
+                                            alt="Web Analytics"
+                                            referrerpolicy="no-referrer-when-downgrade"
+                                    /></a></noscript
+                                >
+                            </span>
+                            <!-- End of Statcounter Code -->
+                        </div>
                     </div>
                 </div>
             </section>
@@ -712,26 +735,5 @@
             })();
         </script>
 
-        <!-- Statcounter (invisible) — country/state/city stats, incl. Chinese provinces.
-             Runs alongside the Flag Counter map in the footer, which keeps its own history.
-             Archived Flag Counter record: assets/data/flagcounter-snapshot-2026-10-01.md -->
-        <script type="text/javascript">
-            var sc_project = 13357864;
-            var sc_invisible = 1;
-            var sc_security = "f82d4d8f";
-        </script>
-        <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
-        <noscript
-            ><div class="statcounter">
-                <a title="Web Analytics" href="https://statcounter.com/" target="_blank" rel="noopener"
-                    ><img
-                        class="statcounter"
-                        src="https://c.statcounter.com/13357864/0/f82d4d8f/1/"
-                        alt="Web Analytics"
-                        referrerpolicy="no-referrer-when-downgrade"
-                /></a>
-            </div></noscript
-        >
-        <!-- End of Statcounter Code -->
     </body>
 </html>
